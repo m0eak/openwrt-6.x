@@ -2,5 +2,5 @@ src-git packages https://github.com/immortalwrt/packages.git
 src-git luci https://github.com/immortalwrt/luci.git
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
-src-git nss_packages https://github.com/King-Of-Knights/nss-packages.git
-src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git
+src-git nss_packages https://github.com/King-Of-Knights/nss-packages.git^5c4eb1c3b75d52871d8a202a8ab9eae8e4dac0e1
+src-git sqm_scripts_nss https://github.com/qosmio/sqm-scripts-nss.git^4324d20cd3017b70c01b6db593ddbe0ba4f6f613
