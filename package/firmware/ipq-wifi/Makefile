@@ -6,9 +6,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=$(PROJECT_GIT)/project/firmware/qca-wireless.git
-PKG_SOURCE_DATE:=2024-04-26
-PKG_SOURCE_VERSION:=644ba9ea2e6685e420561ef098cb6fbaaf136cbf
-PKG_MIRROR_HASH:=3b913fd6fb0fac404b16e67c66d36c10315dba5459a8d495d870afcb1e2c33cd
+PKG_SOURCE_DATE:=2024-06-30
+PKG_SOURCE_VERSION:=e82cba7e7ce79a04d2b658c20ac9be387ccc1dd9
+PKG_MIRROR_HASH:=c71ad9785bf382a80b4c9042f1f19da8737dc85cd11e49f18881dee94df61efd
 PKG_FLAGS:=nonshared
 
 include $(INCLUDE_DIR)/package.mk
@@ -40,9 +40,11 @@ ALLWIFIBOARDS:= \
 	glinet_gl-axt1800 \
 	jdcloud_ax1800-pro \
   jdcloud_ax6600 \
+  linksys_mr7350 \
   linksys_mx4200 \
 	linksys_mx5300 \
 	linksys_mx8500 \
+	linksys_whw03 \
 	netgear_lbr20 \
 	netgear_rax120v2 \
 	netgear_sxk80 \
@@ -172,9 +174,11 @@ $(eval $(call generate-ipq-wifi-package,glinet_gl-ax1800,GL.iNet GL-AX1800))
 $(eval $(call generate-ipq-wifi-package,glinet_gl-axt1800,GL.iNet GL-AXT1800))
 $(eval $(call generate-ipq-wifi-package,jdcloud_ax1800-pro,JDCloud AX1800 Pro))
 $(eval $(call generate-ipq-wifi-package,jdcloud_ax6600,JDCloud AX6600))
+$(eval $(call generate-ipq-wifi-package,linksys_mr7350,Linksys MR7350))
 $(eval $(call generate-ipq-wifi-package,linksys_mx4200,Linksys MX4200))
 $(eval $(call generate-ipq-wifi-package,linksys_mx5300,Linksys MX5300))
 $(eval $(call generate-ipq-wifi-package,linksys_mx8500,Linksys MX8500))
+$(eval $(call generate-ipq-wifi-package,linksys_whw03,Linksys WHW03))
 $(eval $(call generate-ipq-wifi-package,netgear_lbr20,Netgear LBR20))
 $(eval $(call generate-ipq-wifi-package,netgear_rax120v2,Netgear RAX120v2))
 $(eval $(call generate-ipq-wifi-package,netgear_sxk80,Netgear SXK80))
